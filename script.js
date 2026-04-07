@@ -128,4 +128,4 @@ if (heroStats) statsObserver.observe(heroStats);
 
 /* ── Download button (remplace '#' par la vraie URL) ─────── */
 // Pour activer le téléchargement, mets la vraie URL ici :
-document.getElementById('dl-btn').href = 'https://github.com/MaxDofus/dofus-guides/releases/latest/download/DofusGuides-v1.0-Windows.zip';
+document.getElementById('dl-btn').href = 'https://github.com/AeiikosTV/Dofus-guides/releases/latest/download/DofusGuides-v1.0-Windows.zip';
