@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dofus Guides — Tous les guides dofuspourlesnoobs hors-ligne</title>
+  <meta name="description" content="Application gratuite pour consulter tous les guides dofuspourlesnoobs.com hors-ligne. Donjons, tutoriels, outils — disponibles sans connexion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navbar ─────────────────────────────────────────────────────── -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">⚔️</span>
+      Dofus<span>Guides</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#preview">Aperçu</a></li>
+      <li><a href="#install">Installation</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#download" class="btn btn-gold nav-cta">
+      ⬇ Télécharger
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ── Mobile menu ────────────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#features" onclick="closeMobile()">Fonctionnalités</a>
+  <a href="#preview"  onclick="closeMobile()">Aperçu</a>
+  <a href="#install"  onclick="closeMobile()">Installation</a>
+  <a href="#faq"      onclick="closeMobile()">FAQ</a>
+  <a href="#download" onclick="closeMobile()" class="btn btn-gold" style="margin-top:.5rem">⬇ Télécharger</a>
+</div>
+
+<!-- ── Hero ───────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Basé sur dofuspourlesnoobs.com
+    </div>
+
+    <h1 class="hero-title">
+      Tous les guides<br>
+      <span class="gradient-text">Dofus</span> hors-ligne
+    </h1>
+
+    <p class="hero-desc">
+      Téléchargez l'application et accédez à <strong>150+ donjons</strong>,
+      des tutoriels complets et des outils interactifs — même sans connexion internet.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#download" class="btn btn-gold btn-lg">
+        <span>⬇</span> Télécharger gratuitement
+      </a>
+      <a href="#preview" class="btn btn-ghost btn-lg">
+        <span>▶</span> Voir l'aperçu
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">150+</div>
+        <div class="stat-lbl">Donjons</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num">1800+</div>
+        <div class="stat-lbl">Quêtes</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl">Gratuit</div>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-lbl">Pub</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App preview mockup -->
+  <div class="hero-mockup">
+    <div class="mockup-window">
+      <div class="mockup-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="mockup-url">http://127.0.0.1:5000</span>
+      </div>
+      <div class="mockup-body">
+        <div class="mock-nav">
+          <div class="mock-logo">⚔️ Dofus<span>Guides</span></div>
+          <div class="mock-links">
+            <span>🏠</span><span>🏰</span><span>📖</span><span>🛠️</span>
+          </div>
+        </div>
+        <div class="mock-hero">
+          <div class="mock-title">Tous les guides</div>
+          <div class="mock-sub">dofuspourlesnoobs hors-ligne</div>
+          <div class="mock-stats-row">
+            <div class="mock-stat"><b>150+</b><small>Guides</small></div>
+            <div class="mock-stat"><b>1800+</b><small>Quêtes</small></div>
+          </div>
+        </div>
+        <div class="mock-cards">
+          <div class="mock-card">🏰 <span>Donjons</span><small>150 guides</small></div>
+          <div class="mock-card">📖 <span>Tutoriels</span><small>20 guides</small></div>
+          <div class="mock-card">🛠️ <span>Outils</span><small>5 outils</small></div>
+        </div>
+        <div class="mock-list">
+          <div class="mock-item">🏰 Donjon du Comte Harebourg</div>
+          <div class="mock-item">🏰 Aquadome de Merkator</div>
+          <div class="mock-item">📖 Guide de l'éleveur</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features ───────────────────────────────────────────────────── -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Fonctionnalités</div>
+      <h2>Tout ce dont tu as besoin</h2>
+      <p>Une application légère, rapide, sans pub et sans connexion requise.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">📡</div>
+        <h3>Téléchargement auto</h3>
+        <p>Au premier lancement, l'application récupère tous les guides automatiquement depuis dofuspourlesnoobs.com.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">✈️</div>
+        <h3>100% hors-ligne</h3>
+        <p>Une fois les données téléchargées, consulte tous les guides sans aucune connexion internet.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">🔍</div>
+        <h3>Recherche instantanée</h3>
+        <p>Moteur de recherche plein-texte ultra rapide sur tous les guides, avec surlignage des résultats.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">🏰</div>
+        <h3>150+ Donjons</h3>
+        <p>Stratégies boss, compositions de salles, succès et astuces pour chaque donjon du jeu.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">📖</div>
+        <h3>Tutoriels complets</h3>
+        <p>Forgemagie, élevage, chasses au trésor, compagnons, familiers et bien plus.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">🛠️</div>
+        <h3>Outils intégrés</h3>
+        <p>Résolution de chasses au trésor, indices, calculateurs — tout dans la même interface.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">📋</div>
+        <h3>Table des matières</h3>
+        <p>Navigation rapide dans les guides longs grâce à une sidebar générée automatiquement.</p>
+      </div>
+      <div class="feature-card" data-anim>
+        <div class="feature-icon">🚫</div>
+        <h3>Zéro pub</h3>
+        <p>Les publicités sont supprimées lors du scraping. Interface propre et sans distraction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Preview ────────────────────────────────────────────────────── -->
+<section class="section section-dark" id="preview">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Aperçu</div>
+      <h2>Interface moderne & intuitive</h2>
+      <p>Design sombre inspiré de l'univers Dofus, optimisé pour la lisibilité.</p>
+    </div>
+
+    <div class="preview-tabs">
+      <button class="preview-tab active" data-tab="0">🏠 Accueil</button>
+      <button class="preview-tab" data-tab="1">🏰 Donjons</button>
+      <button class="preview-tab" data-tab="2">📖 Guide</button>
+      <button class="preview-tab" data-tab="3">🔍 Recherche</button>
+    </div>
+
+    <div class="preview-container">
+      <!-- Tab 0: Accueil -->
+      <div class="preview-screen active" data-screen="0">
+        <div class="screen-mockup">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="mockup-url">http://127.0.0.1:5000/</span>
+          </div>
+          <div class="screen-body">
+            <div class="sb-nav">
+              <div class="sbn-logo">⚔️ DofusGuides</div>
+              <div class="sbn-links">
+                <span class="sbn-link active">🏠</span>
+                <span class="sbn-link">🏰 Donjons</span>
+                <span class="sbn-link">📖 Tutoriels</span>
+                <span class="sbn-link">🛠️ Outils</span>
+                <span class="sbn-search">🔍 Rechercher…</span>
+              </div>
+            </div>
+            <div class="sb-content">
+              <div class="sb-hero">
+                <div class="sbh-title">Tous les guides <span>Dofus</span> hors-ligne</div>
+                <div class="sbh-desc">Base de données complète — donjons, tutoriels, outils</div>
+                <div class="sbh-stats">
+                  <span>📊 <b>200</b> Guides</span>
+                  <span>🏰 <b>150</b> Donjons</span>
+                  <span>📖 <b>20</b> Tutoriels</span>
+                </div>
+              </div>
+              <div class="sb-section-title">📂 Catégories</div>
+              <div class="sb-cat-grid">
+                <div class="sb-cat">🏰 Donjons<span>150 guides</span></div>
+                <div class="sb-cat">📖 Tutoriels<span>20 guides</span></div>
+                <div class="sb-cat">🛠️ Outils<span>5 outils</span></div>
+              </div>
+              <div class="sb-section-title">🕐 Récemment ajoutés</div>
+              <div class="sb-small-grid">
+                <div class="sb-small-card">🏰<div>Comte Harebourg</div><small>Donjons</small></div>
+                <div class="sb-small-card">🏰<div>Aquadome</div><small>Donjons</small></div>
+                <div class="sb-small-card">📖<div>Forgemagie</div><small>Tutoriels</small></div>
+                <div class="sb-small-card">📖<div>Élevage</div><small>Tutoriels</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 1: Donjons -->
+      <div class="preview-screen" data-screen="1">
+        <div class="screen-mockup">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="mockup-url">http://127.0.0.1:5000/category/Donjons</span>
+          </div>
+          <div class="screen-body">
+            <div class="sb-nav">
+              <div class="sbn-logo">⚔️ DofusGuides</div>
+              <div class="sbn-links">
+                <span class="sbn-link">🏠</span>
+                <span class="sbn-link active">🏰 Donjons</span>
+                <span class="sbn-link">📖 Tutoriels</span>
+                <span class="sbn-link">🛠️ Outils</span>
+                <span class="sbn-search">🔍 Rechercher…</span>
+              </div>
+            </div>
+            <div class="sb-content">
+              <div class="sb-breadcrumb">Accueil › Donjons</div>
+              <div class="sb-page-title">🏰 Donjons <span class="sb-count">(150)</span></div>
+              <div class="sb-filter-bar">
+                <div class="sb-filter-input">🔍 Filtrer les guides…</div>
+                <span class="sb-filter-tab active">Tout</span>
+                <span class="sb-filter-tab">Songes</span>
+                <span class="sb-filter-tab">Épreuves</span>
+              </div>
+              <div class="sb-guide-list">
+                <div class="sb-guide-item">🏰 <span>Donjon du Comte Harebourg</span> <small>›</small></div>
+                <div class="sb-guide-item">🏰 <span>Aquadome de Merkator</span> <small>›</small></div>
+                <div class="sb-guide-item">🏰 <span>Bibliothèque du Maître Corbac</span> <small>›</small></div>
+                <div class="sb-guide-item">🏰 <span>Cour du Bouftou Royal</span> <small>›</small></div>
+                <div class="sb-guide-item">🏰 <span>Palais du Roi Nidas</span> <small>›</small></div>
+                <div class="sb-guide-item sb-muted">+ 145 autres donjons…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Guide -->
+      <div class="preview-screen" data-screen="2">
+        <div class="screen-mockup">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="mockup-url">http://127.0.0.1:5000/guide/donjon-comte-harebourg</span>
+          </div>
+          <div class="screen-body">
+            <div class="sb-nav">
+              <div class="sbn-logo">⚔️ DofusGuides</div>
+              <div class="sbn-links">
+                <span class="sbn-link active">🏰 Donjons</span>
+                <span class="sbn-search">🔍 Rechercher…</span>
+              </div>
+            </div>
+            <div class="sb-content sb-guide-layout">
+              <div class="sb-guide-main">
+                <div class="sb-breadcrumb">Accueil › Donjons</div>
+                <div class="sb-guide-title">Donjon du Comte Harebourg</div>
+                <div class="sb-guide-body">
+                  <div class="sb-h2">Introduction</div>
+                  <div class="sb-p">Le donjon du Comte Harebourg est situé dans la région de Frigost. Le boss final est le Comte Harebourg, accessible aux joueurs niveau 200...</div>
+                  <div class="sb-h2">Composition des salles</div>
+                  <div class="sb-table">
+                    <div class="sbt-head"><span>Salle</span><span>Monstres</span><span>Niveau</span></div>
+                    <div class="sbt-row"><span>1</span><span>Harebourgeois</span><span>190-200</span></div>
+                    <div class="sbt-row"><span>2</span><span>Ombre du Comte</span><span>195-200</span></div>
+                  </div>
+                  <div class="sb-h2">Stratégie Boss</div>
+                  <div class="sb-p">Pour vaincre le Comte Harebourg, il faut éviter les cases de glace...</div>
+                </div>
+              </div>
+              <div class="sb-toc">
+                <div class="sb-toc-title">📋 Sur cette page</div>
+                <div class="sb-toc-item active">Introduction</div>
+                <div class="sb-toc-item">Composition salles</div>
+                <div class="sb-toc-item">Stratégie Boss</div>
+                <div class="sb-toc-item">Succès</div>
+                <div class="sb-back">← Retour Donjons</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Recherche -->
+      <div class="preview-screen" data-screen="3">
+        <div class="screen-mockup">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="mockup-url">http://127.0.0.1:5000/search?q=harebourg</span>
+          </div>
+          <div class="screen-body">
+            <div class="sb-nav">
+              <div class="sbn-logo">⚔️ DofusGuides</div>
+              <div class="sbn-links">
+                <span class="sbn-search-active">🔍 harebourg</span>
+                <button class="sbn-btn">Chercher</button>
+              </div>
+            </div>
+            <div class="sb-content">
+              <div class="sb-page-title">🔍 Recherche <span class="sb-count">(3 résultats)</span></div>
+              <div class="sb-search-bar-full">
+                <span>🔍</span> harebourg
+              </div>
+              <div class="sb-filter-bar">
+                <span class="sb-filter-tab active">Tout (3)</span>
+                <span class="sb-filter-tab">🏰 Donjons (2)</span>
+                <span class="sb-filter-tab">📖 Tutoriels (1)</span>
+              </div>
+              <div class="sb-result">
+                <div class="sbr-icon">🏰</div>
+                <div class="sbr-body">
+                  <div class="sbr-title">Donjon du Comte <mark>Harebourg</mark></div>
+                  <span class="sbr-cat">Donjons</span>
+                  <div class="sbr-excerpt">Le donjon du Comte <mark>Harebourg</mark> est situé dans Frigost…</div>
+                </div>
+              </div>
+              <div class="sb-result">
+                <div class="sbr-icon">🏰</div>
+                <div class="sbr-body">
+                  <div class="sbr-title">Succès spéciaux — <mark>Harebourg</mark></div>
+                  <span class="sbr-cat">Donjons › Succès</span>
+                  <div class="sbr-excerpt">Les succès du donjon <mark>Harebourg</mark> nécessitent…</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Download ───────────────────────────────────────────────────── -->
+<section class="section" id="download">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Téléchargement</div>
+      <h2>Gratuit & sans inscription</h2>
+      <p>Compatible Windows 10/11. Aucun Python requis.</p>
+    </div>
+
+    <div class="download-box" data-anim>
+      <div class="download-main">
+        <div class="download-icon">⚔️</div>
+        <div class="download-info">
+          <h3>Dofus Guides <span class="version-badge">v1.0</span></h3>
+          <p>Application complète — interface + scraper intégré</p>
+          <ul class="download-details">
+            <li>✅ Windows 10 / 11 (64-bit)</li>
+            <li>✅ Aucune installation requise (portable)</li>
+            <li>✅ Aucun Python requis</li>
+            <li>✅ Mise à jour des guides en 1 clic</li>
+          </ul>
+        </div>
+        <div class="download-actions">
+          <!-- REMPLACE ce lien par ton vrai lien de téléchargement -->
+          <a href="#" class="btn btn-gold btn-xl" id="dl-btn">
+            ⬇ Télécharger .zip
+            <small>~50 MB</small>
+          </a>
+          <a href="#install" class="btn btn-ghost">
+            📋 Guide d'installation
+          </a>
+        </div>
+      </div>
+
+      <div class="download-alt">
+        <div class="alt-title">Autres options</div>
+        <div class="alt-options">
+          <a href="#" class="alt-opt">
+            <span>🔧</span>
+            <div>
+              <strong>Installeur Windows</strong>
+              <small>Setup avec raccourci bureau</small>
+            </div>
+          </a>
+          <a href="https://github.com/MaxDofus/dofus-guides" target="_blank" class="alt-opt">
+            <span>💻</span>
+            <div>
+              <strong>Code source (GitHub)</strong>
+              <small>Pour développeurs</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Installation ────────────────────────────────────────────────── -->
+<section class="section section-dark" id="install">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Installation</div>
+      <h2>Prêt en 3 étapes</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-anim>
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Télécharger & extraire</h3>
+          <p>Télécharge le <code>.zip</code>, fais clic droit → <em>"Extraire tout"</em> dans le dossier de ton choix.</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-anim>
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Lancer DofusGuides.exe</h3>
+          <p>Double-clique sur <code>DofusGuides.exe</code>. Au premier lancement, les guides sont téléchargés automatiquement (quelques minutes).</p>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step" data-anim>
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Naviguer hors-ligne</h3>
+          <p>Le navigateur s'ouvre automatiquement. Consulte tous les guides, même sans internet !</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="install-note">
+      <span>ℹ️</span>
+      <span>Windows peut afficher un avertissement "SmartScreen" car l'application n'est pas signée numériquement. Clique sur <strong>"Informations complémentaires"</strong> puis <strong>"Exécuter quand même"</strong> — c'est normal pour les apps indépendantes.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────────── -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FAQ</div>
+      <h2>Questions fréquentes</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>L'application est-elle vraiment gratuite ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Oui, complètement gratuite et sans publicité. Le code source est disponible sur GitHub.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>Les guides sont-ils à jour ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Les guides sont téléchargés depuis dofuspourlesnoobs.com au premier lancement. Pour mettre à jour, relance l'application et les nouveaux guides seront récupérés automatiquement.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>Pourquoi Windows affiche un avertissement de sécurité ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>L'application n'est pas signée numériquement (coûte plusieurs centaines d'euros/an). Windows SmartScreen signale tous les exécutables non signés par défaut. Le code source est public sur GitHub pour vérification.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>Faut-il installer Python ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Non. L'application est fournie avec tout ce qu'il faut. Un simple double-clic suffit.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>Les images des guides sont-elles incluses ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Oui, les images sont téléchargées et stockées localement lors du premier scraping. Après ça, tout fonctionne hors-ligne.</p>
+        </div>
+      </div>
+      <div class="faq-item" data-anim>
+        <button class="faq-q">
+          <span>Compatible Mac / Linux ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Le <code>.exe</code> est Windows uniquement. Sur Mac/Linux, tu peux cloner le code source depuis GitHub et lancer <code>python main.py</code> directement avec Python 3.10+.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:.5rem">
+        <span class="logo-icon">⚔️</span>
+        Dofus<span>Guides</span>
+      </div>
+      <p>Application non officielle. Contenu basé sur dofuspourlesnoobs.com.<br>Dofus est une marque déposée d'Ankama Games.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Application</div>
+        <a href="#download">Télécharger</a>
+        <a href="#install">Installation</a>
+        <a href="#features">Fonctionnalités</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Ressources</div>
+        <a href="https://www.dofuspourlesnoobs.com" target="_blank">dofuspourlesnoobs.com</a>
+        <a href="https://www.dofus.com" target="_blank">dofus.com</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      Dofus Guides — Projet open-source gratuit — Non affilié à Ankama
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
